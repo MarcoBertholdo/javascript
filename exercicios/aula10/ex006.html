@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            font: normal 1.2em arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px black;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Olá mundo!
+    </div>
+    <script>
+        var tamanho = window.document.getElementById('area')
+        tamanho.addEventListener('click', cliquei)
+        tamanho.addEventListener('mouseenter', entrei)
+        tamanho.addEventListener('mouseout', sai)
+
+        function cliquei() {
+            tamanho.innerText = 'Clicou'
+            tamanho.style.backgroundColor = 'red'
+        }
+
+        function entrei() {
+            tamanho.innerText = 'Entrei'
+            tamanho.style.width = '300px'
+            tamanho.style.height = '300px'
+            tamanho.style.lineHeight = '300px'
+            tamanho.style.fontSize = '2em'
+        }
+
+        function sai() {
+            tamanho.innerText = 'Sai'
+            tamanho.style.backgroundColor = 'green'
+            tamanho.style.width = '200px'
+            tamanho.style.height = '200px'
+            tamanho.style.lineHeight = '200px'
+            tamanho.style.fontSize = '1.2em'
+        }
+    </script>
+</body>
+</html>
