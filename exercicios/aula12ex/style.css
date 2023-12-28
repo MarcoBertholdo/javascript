@@ -23,7 +23,6 @@ section {
 }
 
 div {
-    overflow: hidden;
     display: block;
     margin: auto;
     text-align: center;
@@ -39,9 +38,15 @@ div {
 }
 
 img {
+    margin-top: 10px;
     width: 220px;
     border-radius: 50%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.651);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
+}
+
+img:hover {
+    transition: all 1s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transform: scale(1.1);
 }
 
 footer {
