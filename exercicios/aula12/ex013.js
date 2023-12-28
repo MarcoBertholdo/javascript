@@ -20,6 +20,11 @@ switch (diaSem) {
         break
     case 4:
         console.log('Quinta-feira')
+        if (hora > 10) {
+            console.log('São mais de 10:00 horas')
+        } else {
+            console.log('Ainda não é 10:00 horas')
+        }
         break
     case 5:
         console.log('Sexta-feira')
@@ -27,4 +32,4 @@ switch (diaSem) {
     default:
         console.log('Sabado')
 }
-console.log(full)
+console.log(`Horario atual: ${full}`)
