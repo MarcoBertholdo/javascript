@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="male.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <form action="enviar.php" method="get">
+                <p>
+                    <label for="ano">Ano de Nascimento:</label>
+                    <input type="number" name="ano" id="ano"><br>
+                </p>
+
+                <p>
+                    Sexo:
+                    <input type="radio" name="sexo" id="sexoM" value="M">
+                    <label for="sexoM">Masculino</label>
+                    <input type="radio" name="sexo" id="sexoF" value="F">
+                    <label for="sexoF">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="checar()">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <div id="img">
+            <img src="imagens/manha.jpg" alt="imagem pessoa" id="imagem">
+            <p id="msg">Preencha os dados acima para ver o resultado.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <a href="http://github.com/MarcoBertholdo/" target="_blank" rel="external">Marco Bertholdo</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
