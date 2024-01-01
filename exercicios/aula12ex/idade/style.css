@@ -50,6 +50,10 @@ input {
     background-color: rgb(192, 192, 192);
 }
 
+#msg {
+    margin-top: 10px;
+}
+
 img {
     margin: 10px auto;
     display: none;
