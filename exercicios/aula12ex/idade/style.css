@@ -10,6 +10,7 @@
 body {
     background-color: rgb(255, 235, 121);
     box-sizing: border-box;
+    transition-duration: 0.7s;
 }
 
 header {
