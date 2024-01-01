@@ -4,32 +4,57 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 body {
-    background-color: rgb(112, 112, 241);
+    background-color: rgb(255, 235, 121);
     box-sizing: border-box;
-} 
+}
 
 header {
     color: white;
     text-align: center;
 }
 
+h1 {
+    font-size: 2em;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.603);
+} 
+
 section {
     display: block;
     margin: auto;
     width: 500px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(218, 218, 218);
     text-align: center;
     border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+input {
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.botao {
+    padding: 4px;
+}
+
+.botao:hover {
+    background-color: rgb(192, 192, 192);
 }
 
 img {
-    margin: auto;
+    margin: 10px auto;
     display: none;
     width: 200px;
     border-radius: 50%;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.322);
 }
 
 footer {
@@ -39,11 +64,12 @@ footer {
 footer p {
     font-style: italic;
     color: white;
+    padding-top: 6px;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 footer a:hover {
