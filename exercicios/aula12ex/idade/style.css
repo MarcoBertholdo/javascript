@@ -50,7 +50,7 @@ input {
     background-color: rgb(192, 192, 192);
 }
 
-#msg {
+#foto > p {
     margin-top: 10px;
 }
 

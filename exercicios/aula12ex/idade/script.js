@@ -4,7 +4,6 @@ function checar() {
     var ano = window.document.getElementById('ano')
     var sexo = window.document.getElementsByName('sexo')
     var foto = window.document.getElementById('foto')
-    var msg = window.document.getElementById('msg')
     if (ano.value.lenght == 0 || Number(ano.value) > idade) {
         window.alert('[ERRO] Verifique os dados e tente novamente.')
     } else {
