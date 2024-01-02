@@ -56,14 +56,19 @@ input {
 
 img {
     margin: 10px auto;
-    display: none;
     width: 200px;
     border-radius: 50%;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.322);
 }
 
+img:hover {
+    transition: all 1s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transform: scale(1.1);
+}
+
 footer {
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.452);
 }
 
 footer p {
