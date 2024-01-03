@@ -38,5 +38,5 @@ function checar() {
      }
     }
     foto.innerHTML = `Detectamos um(a) ${genero} com <strong>${anos} anos</strong> de idade.`
-     foto.appendChild(img)
+    foto.appendChild(img)
 }
