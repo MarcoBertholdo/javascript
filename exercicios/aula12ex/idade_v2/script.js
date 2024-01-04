@@ -2,6 +2,8 @@ function checar() {
     var data = new Date()
     var idade = data.getFullYear()
     var ano = window.document.getElementById('ano')
+    var mes = window.document.getElementById('mes')
+    var dia = window.document.getElementById('dia')
     var sexo = window.document.getElementsByName('sexo')
     var foto = window.document.getElementById('foto')
     if (ano.value === '' || Number(ano.value) > idade) {
@@ -36,7 +38,8 @@ function checar() {
             img.setAttribute('src', 'imagens/mulher/idosa.png')
         }
      }
-        foto.innerHTML = `Detectamos um(a) ${genero} com <strong>${anos} anos</strong> de idade.`
+        foto.innerHTML = `Detectamos um(a) ${genero} com ${anos} anos de idade.<br>`
+        foto.innerHTML += `Essa pessoa nasceu em <strong>${dia.value}/${mes.value}/${ano.value}</strong>`
         foto.appendChild(img)
     }
 }

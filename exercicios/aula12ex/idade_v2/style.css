@@ -32,13 +32,20 @@ section {
     text-align: center;
     border-radius: 10px;
     padding: 10px;
+    transition-duration: 0.5s;
 }
 
 section:hover {
     width: 310px;
-    border-radius: 30px 10px 30px 10px;
-    transition-duration: 0.5s;
+    border-radius: 30px 0px 30px 0px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+    transition-duration: 0.5s;
+}
+
+
+
+#diamesano > input {
+    width: 200px;
 }
 
 input {
@@ -65,9 +72,12 @@ img {
     width: 200px;
     border-radius: 50%;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.322);
+    transition-duration: 0.5s;
+    filter: grayscale(80%);
 }
 
 img:hover {
+    filter: grayscale(0%);
     transition: all 1s cubic-bezier(0.680, -0.550, 0.265, 1.550);
     transform: scale(1.1);
 }
