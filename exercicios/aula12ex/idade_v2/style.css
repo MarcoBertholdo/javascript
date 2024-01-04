@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(255, 235, 121);
+    box-sizing: border-box;
+    transition-duration: 0.7s;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.603);
+} 
+
+section {
+    display: block;
+    margin: auto;
+    width: 300px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section:hover {
+    width: 310px;
+    border-radius: 30px 10px 30px 10px;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+input {
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.botao {
+    padding: 4px;
+}
+
+.botao:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+#foto > p {
+    margin-top: 10px;
+}
+
+img {
+    margin: 10px auto;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.322);
+}
+
+img:hover {
+    transition: all 1s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.452);
+}
+
+footer p {
+    font-style: italic;
+    color: white;
+    padding-top: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
