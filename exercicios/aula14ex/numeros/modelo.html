@@ -26,13 +26,14 @@
                     <label for="passo">Passo:</label>
                     <input type="number" name="passo" id="passo" required>
                 </p>
-                <p>
-                    <input type="button" value="Contar" onclick="contar()">
+                <p id="botao-center">
+                    <input type="button" value="Contar" onclick="contar()" class="botao">
+                    <input type="reset" value="Limpar" onclick="limpar()" class="botao">
                 </p>
             </form>
         </div>
         <div id="resultado">
-
+            Preparando contagem...
         </div>
     </section>
     <footer>
