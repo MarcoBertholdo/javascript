@@ -13,7 +13,7 @@ function contar() {
         for (var cont = Number(ini.value);cont <= Number(fim.value);cont += Number(pas.value)) {
             resultado.innerHTML += `${cont} 👉 `
         }
-        resultado.innerHTML += `🏁`
+        resultado.innerHTML += `<strong>FIM</strong> 🏁`
     }
 }
 
