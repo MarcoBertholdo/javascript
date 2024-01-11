@@ -7,16 +7,32 @@
     <link rel="shortcut icon" href="sun.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
-        <div id="imagem">
-            <img src="imagens/manha.jpg" alt="imagem manha" id="img">
+        <div id="formulario">
+            <form action="enviar.php" method="get">
+                <p>
+                    <label for="inicio">Inicio:</label>
+                    <input type="number" name="inicio" id="inicio" required>
+                </p>
+                <p>
+                    <label for="fim">Fim:</label>
+                    <input type="number" name="fim" id="fim" required>
+                </p>
+                <p>
+                    <label for="passo">Passo:</label>
+                    <input type="number" name="passo" id="passo" required>
+                </p>
+                <p>
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
+            </form>
         </div>
-        <div id="horario">
-            <!-- HORARIO AQUI -->
+        <div id="resultado">
+
         </div>
     </section>
     <footer>
