@@ -5,7 +5,7 @@ function contar() {
     let resultado = window.document.getElementById('resultado')
 
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) {
-        window.alert('Insira um valor de INICIO e FIM.')
+        window.alert('Insira um valor de INICIO e FIM e PASSO.')
     } else if (Number(pas.value < 1)) {
         pas.value = 1
         window.alert('Passo inválido! O passo foi alterado automaticamente para 1.')
