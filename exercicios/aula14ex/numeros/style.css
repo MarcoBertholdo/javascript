@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    background-color: rgb(78, 78, 252);
+    background-image: linear-gradient(to right, rgb(78, 78, 252), rgb(245, 107, 107));
 }
 
 h1 {
@@ -12,18 +12,13 @@ h1 {
 }
 
 section {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 15px;
     width: 300px;
     margin: auto;
-    transition-duration: 0.4s;
-    font-size: 1.3em;
-}
-
-section:hover {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
-    transition-duration: 0.4s;
+    font-size: 1.3em;
 }
 
 #formulario {
