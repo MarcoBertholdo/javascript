@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Tabuada</h1>
+    </header>
+    <section>
+        <div id="formulario">
+            <form action="enviar.php" method="get">
+                <p>
+                    <label for="numero">Número:</label><br>
+                    <input type="number" name="numero" id="numero" class="forms">
+                </p>
+                <p>
+                    <label for="fim">Quantidade:</label><br>
+                    <input type="number" name="quantidade" id="quantidade" class="forms">
+                </p>
+                <p id="botao-center">
+                    <input type="button" value="Contar" onclick="tabuada()" class="botao">
+                    <input type="reset" value="Limpar" onclick="limpar()" class="botao">
+                </p>
+            </form>
+        </div>
+        <div id="resultado">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <a href="http://github.com/MarcoBertholdo/" target="_blank" rel="external">Marco Bertholdo</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
