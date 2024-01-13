@@ -10,19 +10,19 @@ function contar() {
         pas.value = 1
         window.alert('Passo inválido! O passo foi alterado automaticamente para 1.')
     } else {
-          resultado.innerHTML = 'Contando: '
-          if (Number(ini.value) < Number(fim.value)) {
-            for (let cont = Number(ini.value);cont <= Number(fim.value);cont += Number(pas.value)) {
-                resultado.innerHTML += `${cont} 👉 `
+            resultado.innerHTML = 'Contando: <br>'
+            if (Number(ini.value) < Number(fim.value)) {  // CONTAGEM CRESCENTE
+                for (let cont = Number(ini.value);cont <= Number(fim.value);cont += Number(pas.value)) {
+                    resultado.innerHTML += `${cont} \u{1F449} `
+                }
+            } else {  // CONTAGEM REGRESSIVA
+                for (let cont = Number(ini.value);cont >= Number(fim.value);cont -= Number(pas.value)) {
+                    resultado.innerHTML += `${cont} \u{1F449} `
+                }
             }
-        } else {
-            for (let cont = Number(ini.value);cont >= Number(fim.value);cont -= Number(pas.value)) {
-                resultado.innerHTML += `${cont} 👉 `
-            }
+            resultado.innerHTML += `<strong>FIM</strong> \u{1F3C1}`
         }
-          resultado.innerHTML += `<strong>FIM</strong> 🏁`
     }
-}
 
 function limpar() {
     let resultado = window.document.getElementById('resultado')
