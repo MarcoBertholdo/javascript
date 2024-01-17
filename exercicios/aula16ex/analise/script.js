@@ -3,7 +3,7 @@ let res = document.getElementById('resultado')
 let tab = document.getElementById('tab')
 let numbers = []
 let maior = 0
-let menor = 101
+let menor = 0
 let soma = 0
 let media = 0
 function adicionar() {
@@ -11,16 +11,18 @@ function adicionar() {
     if(num.value.length == 0 || Number(num.value) < 1 || Number(num.value) > 100) {
         window.alert('Valor inválido, insira um valor correto.')
     } else if(numbers.indexOf(Number(num.value)) == -1) {
-        res.innerHTML = ''
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado`
         tab.appendChild(item)
         numbers.push(Number(num.value))
+        res.innerHTML = ''
         soma += Number(num.value)
         if(Number(num.value) > maior) {
             maior = Number(num.value)
         }
-        if(Number(Number(num.value) < menor)) {
+        if(menor == 0){
+            menor = Number(num.value)
+        } else if(Number(num.value) < menor) {
             menor = Number(num.value)
         }
     } else {
