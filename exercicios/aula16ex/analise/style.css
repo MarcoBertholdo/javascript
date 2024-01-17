@@ -36,6 +36,10 @@ label {
     transition-duration: 0.4s;
 }
 
+.forms:focus {
+    width: 90px;
+}
+
 .botao {
     padding: 1px;
     width: 80px;
@@ -61,7 +65,6 @@ label {
     display: block;
     margin: 2px auto;
 }
-
 #subtit {
     font-size: 0.8em;
     margin-bottom: 1px
