@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analise de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div id="formulario">
+            <form action="enviar.php" method="get">
+                <p>
+                    <label for="numero">Número(entre 1 e 100):</label>
+                    <input type="number" name="numero" id="numero" class="forms">
+                    <input type="button" value="Adicionar" onclick="adicionar()" class="botao" id="center">
+                    
+                </p>
+            </form>
+            <select name="tabuada" id="seltab" size="10">
+                <option value="">Digite um número acima</option>
+            </select><br>
+            <input type="button" value="Finalizar" onclick="finalizar()" class="botao">
+        </div>
+        <div id="resultado">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <a href="http://github.com/MarcoBertholdo/" target="_blank" rel="external">Marco Bertholdo</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

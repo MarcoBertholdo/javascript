@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #539fa2, #72b1a4);
+}
+
+h1 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: #e9f8ec;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 3px 3px 10px #2a5052;
+    font-size: 1.1em;
+}
+
+label {
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+
+.forms {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.336);
+    font-size: 0.em;
+    padding: 2px;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    width: 80px;
+    transition-duration: 0.4s;
+}
+
+.forms:hover {
+    padding: 4px;
+    width: 90px;
+    transition-duration: 0.4s;
+}
+
+.botao {
+    padding: 1px;
+    width: 80px;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    background-color: #72b1a4;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    margin: 2px auto;
+}
+
+.botao:hover {
+    background-color: #84cebf;
+    width: 40%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.616);
+    transition-duration: 0.3s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+#center {
+    display: block;
+    margin: 2px auto;
+}
+
+#tabela {
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: monospace;
+    border-radius: 15px;
+}
+
+footer {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
