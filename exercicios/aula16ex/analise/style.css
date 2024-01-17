@@ -36,12 +36,6 @@ label {
     transition-duration: 0.4s;
 }
 
-.forms:hover {
-    padding: 4px;
-    width: 90px;
-    transition-duration: 0.4s;
-}
-
 .botao {
     padding: 1px;
     width: 80px;
@@ -68,11 +62,8 @@ label {
     margin: 2px auto;
 }
 
-#tabela {
-    padding: 10px;
-    font-size: 1.1em;
-    font-family: monospace;
-    border-radius: 15px;
+select {
+    width: 50%;
 }
 
 footer {
