@@ -26,6 +26,8 @@ function adicionar() {
     } else {
         window.alert(`O valor ${num.value} já foi adicionado.`)
     }
+    num.value = ''
+    num.focus()
 }
 
 
